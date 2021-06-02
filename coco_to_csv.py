@@ -48,6 +48,8 @@ for annId in annIds:
     x2 = x1 + w
     y2 = y1 + h
     
+    x1, x2, y1, y2 = int(x1), int(x2), int(y1), int(y2)
+    
     csv_writer.writerow([os.path.join(rel_coco_folder, img['file_name']), str(x1), str(y1), str(x2), str(y2), cat['name']])
 
 csv_file.close()
