@@ -27,7 +27,7 @@ if args.check_file:
     for imgId in imgIds:
         img = coco.loadImgs(imgId)[0]
         if not os.path.isfile(os.path.join(args.coco_folder, img['file_name'])):
-            print('The image {} is not exist. Please ignore this error, use --no_check_file flag.'.forat(img['file_name']))
+            print('The image {} is not exist. Please ignore this error, use --no_check_file flag.'.format(img['file_name']))
             exit()
 
 csv_file = open(args.save_ann, 'w')
