@@ -141,3 +141,7 @@ The classes csv file format is:
 ```text
 class_name,id
 ```
+
+## License
+
+[MIT License](LICENSE)
