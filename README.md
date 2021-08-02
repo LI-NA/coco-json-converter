@@ -33,7 +33,7 @@ The directory structure described below is the same as above (train.json and the
 
 ### COCO to XML
 
-`coco_to_xml.py` script can convert coco json to xml files.
+`coco_to_xml.py` script can convert coco json to xml files. AND IT IS FAST (a few seconds for thousands of images)!
 
 ```shell
 python coco_to_xml.py --coco_json=train.json --coco_folder=train --save_xml=train_xml --database_name=Database
